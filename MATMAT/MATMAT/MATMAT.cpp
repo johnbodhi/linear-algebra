@@ -51,28 +51,6 @@ int main() {
 		}
 	}
 
-	//for (int i = 0; i <= N - 1; i++) {
-
-	//	for (int j = 0; j <= M - 1; j++) {
-
-	//		std::cout << setw(5) << A[i][j] << setw(5);
-	//	}
-	//	std::cout << std::endl;
-	//}
-	//std::cout << std::endl;
-
-
-	/*for (int i = 0; i <= O - 1; i++) {
-
-		for (int j = 0; j <= P - 1; j++) {
-
-			std::cout << setw(5) << B[i][j] << setw(5);
-		}
-		std::cout << std::endl;
-	}
-	std::cout << std::endl;*/
-
-
 	for (int k = 0; k <= N - 1; k++) {
 
 		for (int j = 0; j <= P - 1; j++) {
@@ -87,15 +65,6 @@ int main() {
 		}
 		ii = 0; vv = 0; aa++; uu++;
 	}
-
-	//for (int i = 0; i <= P - 1; i++) {
-
-	//	for (int j = 0; j <= N - 1; j++) {
-
-	//		std::cout << setw(5) << C[i][j] << setw(5);
-	//	}
-	//	std::cout << std::endl;
-	//}
 
 	auto stop = high_resolution_clock::now();
 	auto duration = duration_cast<microseconds>(stop - start);
