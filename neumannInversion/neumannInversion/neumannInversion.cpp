@@ -51,7 +51,7 @@ int main() {
 
 			if (i == j) {
 
-				A[j][i] = dist(mt);;
+				A[j][i] = dist(mt);
 			}
 			else {
 
@@ -85,30 +85,24 @@ int main() {
 	}
 
 
-	for (int j = 0; j <= M - 1; j++) {
-
-		for (int i = 0; i <= N - 1; i++) {
-
-			Q[0][j][i] = I[j][i];
-
-			Q[1][j][i] = S[j][i];
-
-		}
-	}
-
-
-	for (int k = 2; k <= L - 1; k++) {
+	for (int k = 0; k <= L - 1; k++) {
 
 		for (int j = 0; j <= M - 1; j++) {
 
 			for (int i = 0; i <= N - 1; i++) {
 
-				if (i == j) {
+				if ( k == 0 ) {
+
+					Q[0][j][i] = I[j][i];
+				}
+				else if ( k == 1 ) {
+
+					Q[1][j][i] = S[j][i];
+				}
+				else if ( i == j ) {
 
 					Q[k][j][i] = pow(S[j][i], k);
-
 				}
-
 			}
 		}
 	}
