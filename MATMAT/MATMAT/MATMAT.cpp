@@ -1,14 +1,21 @@
 #include <iostream>
 #include <random>
 #include <iomanip>
+#include <chrono>
 
 using namespace std;
 
+using namespace chrono;
+
+auto start = high_resolution_clock::now();
+
 int main() {
 
-	const int N = 2, M = 4, O = 4, P = 2;
+	const int X = 50;
 
-	int A[N][M], B[O][P], C[N][P];
+	const int N = X, M = X, O = X, P = X;
+
+	float A[N][M], B[O][P], C[N][P];
 
 	int ii = 0, jj = 0;
 	
@@ -18,7 +25,7 @@ int main() {
 
 	std::random_device rd;
 	std::mt19937 mt(rd());
-	std::uniform_real_distribution <double> dist(1.0, 10.0);
+	std::uniform_real_distribution <float> dist(0.0, 0.99);
 
 	for (int i = 0; i <= N - 1; i++) {
 
@@ -44,28 +51,6 @@ int main() {
 		}
 	}
 
-	for (int i = 0; i <= N - 1; i++) {
-
-		for (int j = 0; j <= M - 1; j++) {
-
-			std::cout << setw(5) << A[i][j] << setw(5);
-		}
-		std::cout << std::endl;
-	}
-	std::cout << std::endl;
-
-
-	for (int i = 0; i <= O - 1; i++) {
-
-		for (int j = 0; j <= P - 1; j++) {
-
-			std::cout << setw(5) << B[i][j] << setw(5);
-		}
-		std::cout << std::endl;
-	}
-	std::cout << std::endl;
-
-
 	for (int k = 0; k <= N - 1; k++) {
 
 		for (int j = 0; j <= P - 1; j++) {
@@ -81,14 +66,11 @@ int main() {
 		ii = 0; vv = 0; aa++; uu++;
 	}
 
-	for (int i = 0; i <= P - 1; i++) {
+	auto stop = high_resolution_clock::now();
+	auto duration = duration_cast<microseconds>(stop - start);
 
-		for (int j = 0; j <= N - 1; j++) {
-
-			std::cout << setw(5) << C[i][j] << setw(5);
-		}
-		std::cout << std::endl;
-	}
+	std::cout << "Time taken by function: " << duration.count() \
+		<< " microseconds." << std::endl;
 
 	return 0;
 }
