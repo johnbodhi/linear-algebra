@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jmgar\\OneDrive\\Documents\\GitHub\\linear-algebra\\neumannInversion\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DC8F905E-82B8-42B0-841E-042A82B4E8BA}|neumannInversion\\neumannInversion.vcxproj|C:\\Users\\jmgar\\OneDrive\\Documents\\GitHub\\linear-algebra\\neumannInversion\\neumannInversion\\neumannInversion.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DC8F905E-82B8-42B0-841E-042A82B4E8BA}|neumannInversion\\neumannInversion.vcxproj|solutionrelative:neumannInversion\\neumannInversion.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "neumannInversion.cpp",
+              "DocumentMoniker": "C:\\Users\\jmgar\\OneDrive\\Documents\\GitHub\\linear-algebra\\neumannInversion\\neumannInversion\\neumannInversion.cpp",
+              "RelativeDocumentMoniker": "neumannInversion\\neumannInversion.cpp",
+              "ToolTip": "C:\\Users\\jmgar\\OneDrive\\Documents\\GitHub\\linear-algebra\\neumannInversion\\neumannInversion\\neumannInversion.cpp",
+              "RelativeToolTip": "neumannInversion\\neumannInversion.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-20T05:30:42.203Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
